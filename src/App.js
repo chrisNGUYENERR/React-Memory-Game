@@ -91,7 +91,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Memory Game</h1>
+          <h1>React Memory Game</h1>
           <h4 className="Subtitle">Match Cards To Win</h4>
         </header>
           <div>
