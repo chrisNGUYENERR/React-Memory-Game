@@ -3,7 +3,7 @@ import MemoryCard from './components/MemoryCard';
 import React, { Component } from 'react';
 
 let generateDeck = () => {
-  const symbols = ['∆', 'ß', '£', '§', '•', '$', '+', 'ø'];
+  const symbols = ['🐶', '🐱', '🐸', '🐷', '🐼', '🐯', '🦊', '🐙'];
   let deck = [];
 
   for (let i=0; i < 16; i++) {
@@ -53,7 +53,7 @@ class App extends Component {
       let card1Index = newPickedCards[0];
       let card2Index = newPickedCards[1];
       if (newDeck[card1Index].symbol !== newDeck[card2Index].symbol) {
-        setTimeout(this.unflipCards.bind(this, card1Index, card2Index), 1000);
+        setTimeout(this.unflipCards.bind(this, card1Index, card2Index), 750);
       }
       newPickedCards = [];
     }
